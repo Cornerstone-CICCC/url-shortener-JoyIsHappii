@@ -1,11 +1,12 @@
 {
   "name": "url-shortener",
   "version": "1.0.0",
-  "description": "",
+  "description": "In this assignment, you'll create a URL shortener application. This app should allow users to enter a full URL, generate a unique shortened version, and track how many times each shortened URL has been clicked. The application should: - Accept full URLs and generate a unique short URL. - Store these short URLs along with the original URL and click count. - Redirect users to the full URL when they access the short URL.",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon --watch server.ts --exec ts-node server.ts",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,16 @@
     "@types/node": "^22.8.7",
     "@types/shortid": "^2.2.0",
     "nodemon": "^2.0.2",
-    "typescript": "^5.6.3"
-  }
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cornerstone-CICCC/url-shortener-JoyIsHappii.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Cornerstone-CICCC/url-shortener-JoyIsHappii/issues"
+  },
+  "homepage": "https://github.com/Cornerstone-CICCC/url-shortener-JoyIsHappii#readme"
 }
